@@ -7,8 +7,8 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import 'boxicons/css/boxicons.min.css';
 import 'glightbox/dist/css/glightbox.min.css';
 
-import '@/assets/base.css';
-import '@/assets/base.js';
+import './assets/base.css';
+import './assets/base.js';
 
 const app = createApp(App);
 
