@@ -13,7 +13,6 @@
     "bootstrap-icons": "^1.9.1",
     "boxicons": "^2.1.2",
     "glightbox": "^3.2.0",
-    "swiper": "^8.3.2",
     "vue": "^3.2.37",
     "vue-router": "^4.1.2"
   },
