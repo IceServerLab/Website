@@ -10,7 +10,6 @@
         <ul>
           <li><router-link to="/">Home</router-link></li>
           <li><router-link to="/rule">Rule</router-link></li>
-          <li><router-link to="/admin">Admin</router-link></li>
           <!--<li><router-link to="/blog">Blog</router-link></li>-->
           <li class="dropdown"><a href="#"><span>Links</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
