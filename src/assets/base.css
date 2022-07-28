@@ -911,6 +911,12 @@ section {
 /*--------------------------------------------------------------
 # Features
 --------------------------------------------------------------*/
+.features {
+  display: block;
+  padding-top: 120px;
+  margin-top: -60px;
+}
+
 .features .row + .row {
   margin-top: 100px;
 }
