@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
+import RuleView from "../views/RuleView.vue"
 import NotFound from "../views/NotFound.vue";
 
 const scrollBehavior = (to, from, savedPosition) => {
@@ -11,16 +12,9 @@ const scrollBehavior = (to, from, savedPosition) => {
 };
 
 const routes = [
-  {
-    path: '/',
-    name: 'Home',
-    component: HomeView
-  },
-  {
-    path: '/:catchAll(.*)',
-    name: 'NotFound',
-    component: NotFound
-  }
+  { path: '/', name: 'Home', component: HomeView },
+  { path: '/rule', component: RuleView },
+  { path: '/:catchAll(.*)', component: NotFound }
 ];
 
 const router = createRouter({
