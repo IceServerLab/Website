@@ -15,7 +15,7 @@ import Breadcrumbs from "@/components/Breadcrumbs.vue"
             <h5 class="space">
               ・他、各ゲームのルールも厳守<br>
               ・常識、マナーを厳守<br>
-              ・生放送、動画撮影等をしたい場合は<a href="#tp1">こちら</a>を参照
+              ・生放送、動画撮影等は自由
             </h5>
             <h2 class="title">禁止行為【全サービス】</h2>
             <h5 class="space">
