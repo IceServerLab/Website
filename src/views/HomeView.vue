@@ -93,14 +93,14 @@ import CarouselItem from '@/components/carousel/CarouselItem.vue'
 
         <div class="row" data-aos="fade-up">
           <div class="col-md-5">
-            <img src="/img/join.png" class="img-fluid" alt="">
+            <a href="/img/join.png"><img src="/img/join.png" class="img-fluid" alt=""></a>
           </div>
           <div class="col-md-7 pt-4">
             <h3>サーバーに参加する</h3>
             <p>必ず<a href="/rule">「ルール」</a>を確認してからサーバーへ参加してください。</p>
             <ul>
               <li><i class="bi bi-check"></i> 右下の「サーバーを追加」をクリック</li>
-              <li><i class="bi bi-check"></i> 左の様にサーバーアドレスを入力</li>
+              <li><i class="bi bi-check"></i> 左の様にサーバーアドレスを入力（画像をクリックで拡大）</li>
               <li><i class="bi bi-check"></i> 「完了」をクリック</li>
               <li><i class="bi bi-check"></i> 追加されたサーバーへ参加</li>
             </ul>
