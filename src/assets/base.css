@@ -909,39 +909,39 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Features
+# Minecraft
 --------------------------------------------------------------*/
-.features {
+.minecraft {
   display: block;
   padding-top: 120px;
   margin-top: -60px;
 }
 
-.features .row + .row {
+.minecraft .row + .row {
   margin-top: 100px;
 }
 
-.features h3 {
+.minecraft h3 {
   font-weight: 400;
   font-size: 24px;
 }
 
-.features ul {
+.minecraft ul {
   list-style: none;
   padding: 0;
 }
 
-.features ul li {
+.minecraft ul li {
   padding-bottom: 10px;
 }
 
-.features ul i {
+.minecraft ul i {
   font-size: 20px;
   padding-right: 4px;
   color: #68a4c4;
 }
 
-.features p:last-child {
+.minecraft p:last-child {
   margin-bottom: 0;
 }
 

@@ -3,7 +3,7 @@
     <div class="carousel-container">
       <h2 class="animate__animated animate__fadeInDown"><slot name="title" /></h2>
       <p class="animate__animated animate__fadeInUp"><slot name="content" /></p>
-      <a href="#join" class="btn-get-started animate__animated animate__fadeInUp">Join The Server</a>
+      <a href="#minecraft" class="btn-get-started animate__animated animate__fadeInUp">Join The Server</a>
     </div>
   </div>
 </template>

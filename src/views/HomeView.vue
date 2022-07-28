@@ -83,31 +83,71 @@ import CarouselItem from '@/components/carousel/CarouselItem.vue'
       </div>
     </section>
 
-    <section class="features">
+    <section class="minecraft" id="minecraft">
       <div class="container">
 
         <div class="section-title">
           <h2>サーバーについて</h2>
-          <p>24時間365日フル稼働のクロスプレイマルチサーバーです。</p>
+          <p>Java版、BE版（統合版）関係なく、1.8x〜1.19xまでどのバージョンでも参加可能です！！</p>
         </div>
 
-        <h3 style="text-align: center">近日公開...</h3>
-        <!--<div class="row" data-aos="fade-up">
+        <div class="row" data-aos="fade-up">
           <div class="col-md-5">
-            <img src="/img/" class="img-fluid" alt="">
+            <img src="/img/join.png" class="img-fluid" alt="">
           </div>
           <div class="col-md-7 pt-4">
-            <h3>Content</h3>
-            <p class="fst-italic">Content</p>
+            <h3>サーバーに参加する</h3>
+            <p>必ず<a href="/rule">「ルール」</a>を確認してからサーバーへ参加してください。</p>
             <ul>
-              <li><i class="bi bi-check"></i> Content</li>
-              <li><i class="bi bi-check"></i> Content</li>
+              <li><i class="bi bi-check"></i> 右下の「サーバーを追加」をクリック</li>
+              <li><i class="bi bi-check"></i> 左の様にサーバーアドレスを入力</li>
+              <li><i class="bi bi-check"></i> 「完了」をクリック</li>
+              <li><i class="bi bi-check"></i> 追加されたサーバーへ参加</li>
             </ul>
           </div>
-        </div>-->
+        </div>
 
       </div>
     </section>
 
   </main>
+
+  <a
+    href="#"
+    class="back-to-top d-flex align-items-center justify-content-center"
+    :class="{ active: scrollY > 100 }"
+    ><i class="bi bi-arrow-up-short"></i
+  ></a>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      scrollY: 0,
+    };
+  },
+  methods: {
+    handleScroll() {
+      this.scrollY = window.scrollY;
+    },
+  },
+  watch: {
+    $route: function (n, o) {
+      if (n.hash.match(/^#/)) {
+        document.getElementById(n.hash.replace(/^#/, "")).scrollIntoView();
+      }
+      console.log("new, old", [n.hash, o.hash]);
+    },
+  },
+  mounted() {
+    window.addEventListener("scroll", this.handleScroll);
+
+    if (this.$route.hash.match(/^#/)) {
+      document
+        .getElementById(this.$route.hash.replace(/^#/, ""))
+        .scrollIntoView();
+    }
+  },
+};
+</script>
